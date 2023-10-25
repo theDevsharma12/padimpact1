@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+section{
+    background-image: url(../images/padincinator-img-2.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    margin-bottom: 12rem;
+}
+
+
+.incinator{
+margin-bottom: 14rem;
+}
+/* 
+.main{
+    background-color: #000;
+} */
+.features-section div h3{
+    color: #484848;
+    font-size: 20px;
+}
+.mt-24 {
+    margin-top: 24px;
+    color: #484848;
+}
+.padcinator-models h1{
+    text-align: center;
+    color: #484848;
+    font-size: 46px;
+}.incinator-heading h1{
+    color: #484848;
+}.features-head{
+    margin-top: 3rem;
+}
+.features-head h2{
+    color: #484848;
+}.incinator-making{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}.has-bottom-divider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #242830;
+    display: none;
+}
+.text-sm ul li{
+    padding: 22px 0;
+}
+.feature h4{
+    padding-bottom: 1rem;
+}
+.feature-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0;
+    text-align: center;
+}
+.feature-icon img{
+    height: 15rem;
+}
+.feature-inner h4{
+    font-size: 1.8rem;
+}
+.fetaures-content{
+    font-size: 1.1rem;
+}
+.fetaures-content span{
+    font-weight: 500;
+}
+.features-section{
+    margin: 0 9rem;
+}
+
+@media (max-width: 426px){
+    .main .incinator {
+        /* display: inline-block; */
+    }
+
+    .features-section {
+        font-weight: 300;
+        margin-top: 2.4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .fetaures-content {
+        font-size: .9rem;
+    }
+}

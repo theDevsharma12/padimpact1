@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --white:#fff;
+}
+body{
+    /* background-color: #000; */
+    font-family: var(--roboto);
+    background-color: #FEF5F6;
+}
+body, html {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+.navbar {
+	background-color: transparent;
+	padding: 30px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1366px;
+	z-index: 99;
+}
+
+.navbar a {
+	float: left;
+	color: #FEF5F6;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 12px;
+}
+
+.navbar .logo {
+	font-size: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-right a:hover {
+	color:#E88683 ;
+}
+
+.navbar-right a.active {
+	color: #E88683;
+}
+
+.navbar-right a {
+	transition: color 0.5s ease;
+}
+
+.navbar-right {
+	float: right;
+}
+
+.navbar .icon {
+	display: none;
+}
+
+.slideshow-container {
+	position: relative;
+	height: 100%;
+}
+
+.slide-item {
+	display: none;
+}
+
+.bgimg {
+	height: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgimg::after {
+	content: '\A';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+
+.caption {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 9;
+}
+
+.caption h2 {
+	color: var(--white);
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 70px;
+}
+
+.caption p {
+	color: var(--white);
+	font-size: 20px;
+}
+
+.caption button {
+	background-color: var(--white);
+	border: 2px solid var(--red);
+	color: var(--red);
+	padding: 10px 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 16px;
+	margin-top: 30px;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.caption button:hover {
+	cursor: pointer;
+	color: var(--white);
+	background-color: var(--red);
+}
+
+.caption button:focus {
+	outline: none;
+}
+
+.dot {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #FEF5F6;
+	border-radius: 5px;
+	display: inline-block;
+	transition: background-color 0.6s ease, height 0.6s;
+}
+
+.slide-control {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	width: 10px;
+	text-align: center;
+}
+
+.dot:hover {
+	background-color: #E88683;
+}
+
+.dot.active {
+	background-color: #E88683;
+	height: 60px;
+}
+
+/* fade animation */
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.0s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.0s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	} to {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	} to {
+		opacity: 1
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		padding: 10px;
+	}
+	
+	.navbar .menu {
+		display: none;
+	}
+
+	.navbar .icon {
+		display: block;
+		position: absolute;
+		top: 13px;
+		right: 13px;
+	}
+
+	.navbar.show {
+		background: var(--black);
+	}
+
+	.navbar.show .menu {
+		display: block;
+		width: 100%;
+	}
+
+	.navbar.show .menu a {
+		width: 100%;
+	}
+}
+
+
+/* ------------------------------------------- */
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90vh;
+    padding: 0 16rem;
+}
+/* .about-section{
+    background-image: url(../images/bg-5.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+.about-heading{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 1.2rem;
+}
+.about-container span{
+    color: #E88683;
+}
+.about-container p{
+    margin: 16px 0;
+}
+.about-l img{
+    height: 28rem;
+    width: 33rem;
+    margin-right: 3rem;
+}
+
+/* -------------------------------------- */
+
+span{
+    color: #E88683;
+}
+.founder-heading,.initiatives-heading{
+    text-align: center;
+}
+.founder-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    margin: 0 16rem;
+}
+.founder-container img{
+    height: 28rem;
+    margin-left: 4rem;
+}
+.founder-container .content{
+    text-align: end;
+}
+.content h4{
+    color: #e8868378;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    font-size: 1.6rem;
+}
+.content h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.content p{
+    font-size: 18px;
+}
+.founder-container p{
+    margin-top: 18px;
+}
+
+/* -------------------------------------- */
+
+.initiatives-section{
+    height: 100%;
+	margin-bottom: 6rem;
+}
+/* .initiatives-heading{
+	margin-top: 3rem;
+    font-size: 1.4rem;
+	margin-bottom: -2rem;
+}
+.initiative-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.initiative-grid img{
+    width: 100%;
+    height: 14rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	border: #E88683 2px solid;
+	padding: 3px;
+}
+.initiative-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 4rem;
+    margin: 4rem 14rem;
+}
+.initiative-grid div{
+    padding: 1rem;
+}
+.initiative-grid div h3{
+    font-size: 24px;
+    color: #E88683;
+	margin: 0 8px;
+}
+.initiative-grid div p{
+	margin: 0 8px;
+	font-size: 14px;
+} */
+
+
+/* --------------------------------------------- */
+
+.incinator{
+	height: 100vh;
+	margin-top: 2rem;
+}
+.incinator-heading{
+  text-align: center;
+}
+.incinator-heading h4{
+	color: #888;
+	font-size: 18px;
+}
+.incinator-heading h1{
+	font-size: 2.4rem;
+}
