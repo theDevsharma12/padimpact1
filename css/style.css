@@ -321,6 +321,7 @@ ul li{
     height: 11rem;
 }
 
+
 /* ---------------------------------------- */
 
 .popup-link img{
@@ -378,7 +379,7 @@ ul li{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 35%;
 }
 .popup-content p{
     font-size: 17px;
@@ -473,6 +474,10 @@ ul li{
 
  }
 
+.popup-img{
+    width: 100%;
+    margin-bottom: 10px;
+}
 /* -------------------------------------- */
 
 span{
