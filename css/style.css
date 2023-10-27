@@ -1061,7 +1061,6 @@ footer p{
      flex-wrap:wrap;
      align-items: center;
      justify-content: center;
-     margin-top: 8rem;
    }
    .popup-box{
    	display: flex;
@@ -1194,6 +1193,7 @@ footer p {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+		margin-top:12rem;
 	}
 	.popup-box{
 		display: flex;
