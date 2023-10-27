@@ -328,8 +328,8 @@ ul li{
 
 /* ---------------------------------------- */
 .Initiatives-head{
-	margin-top: 6rem;
-	margin-bottom: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
 	text-align: center;
 }
 @media(max-width:700px){
@@ -961,7 +961,7 @@ footer p{
 
 
 
-@media(max-width:1025px){
+@media(max-width:1385px){
 	.caption h2 {
 		margin-bottom: 20px;
 		font-size: 45px;
@@ -1049,9 +1049,10 @@ footer p{
 	}
 	/* ---------------------- */
    	
-   .popup-link img{
-   	height: 15rem;
-	width: 98%;
+ .popup-link img{
+   	height: 12rem;
+	width: 120%;
+
    	border-radius: 10px;
    	border:  2px solid #e19491;
    	padding: 2px;
@@ -1068,7 +1069,7 @@ footer p{
    	align-items: center;
    	justify-content: center;
    	flex-direction: column;
-   	margin: 1.2rem;
+   	margin: 1.8rem;
    }
    .popup-link a {
     background-color: #E88683;
@@ -1153,7 +1154,10 @@ footer p {
 		margin-top: 4rem;
 		margin: 4rem 0rem;
 	}
-
+	.popup-link img {
+		height: 14rem;
+		width: 100%;
+	}
 	.founder-container {
 		display: flex;
 		flex-direction: column;
@@ -1191,7 +1195,6 @@ footer p {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		margin-top: 12rem;
 	}
 	.popup-box{
 		display: flex;
