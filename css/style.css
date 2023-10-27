@@ -373,18 +373,22 @@ ul li{
     background-color: #e8868341;
     display: flex;
     align-items: center;
+    overflow-y: scroll;
 }
 .popup-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 35%;
+    width: 40%;
 }
 .popup-content p{
     font-size: 17px;
     padding: 10px;
     line-height: 20px;
+}
+.popup-content div{
+    padding: 8px 0;
 }
 .popup-content a.close{
     color: #aaaaaa;
