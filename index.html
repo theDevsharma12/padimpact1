@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/padimpact-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--------Navbar------>
@@ -125,7 +126,7 @@
             </p>
         </div>
         <div class="about-container-1">
-            <div class="about-box">
+            <div data-aos="slide-left" class="about-box">
                 <div class="about-content">
                     <h2>Our <span>Vision</span></h2>
                     <p>
@@ -134,7 +135,7 @@
                 </div>
                 <img src="./images/vision.png" alt="">
             </div>
-            <div class="about-box mission">
+            <div data-aos="slide-right" class="about-box mission">
                 <img src="./images/mission.png" alt="">
                 <div class="about-content">
                     <h2><span>Our</span> Mission</h2>
@@ -144,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="sdg-section">
+        <div data-aos="fade-up" class="sdg-section">
             <div class="sdg-heading">
                 <h3>We Follow</h3>
                 <h2><span>sustainable</span> Development Goals</h2>
@@ -156,11 +157,11 @@
       <!-------------About founder--------------->
       
       <div class="incinator">
-        <div class="incinator-heading">
+        <div class="incinator-heading" data-aos="fade-up">
             <h4>INTRODUCING</h4>
             <h1><span>Padincinator</span></h1>
         </div>
-        <div class="incinator-container">
+        <div class="incinator-container" data-aos="fade-up">
             <img class="incinator-img" src="./images/Incinator-img.png" alt="">
             <div>
                <p>
@@ -198,7 +199,7 @@
       </div>
       
       <!-- -------------Initiatives--------------- -->
-    <div class="Initiatives-head">
+    <div class="Initiatives-head" data-aos="fade-down">
         <h1>Our <span>Initiatives</span></h1>
     </div>
       <div class="popup-link">
@@ -219,7 +220,7 @@
         </div>
         </div>
         <!--popup1-->
-        <div id="popup1" class="popup-container">
+        <div id="popup1" class="popup-container" data-aos="fade-down">
           <div class="popup-content">
             <a href="#null" class="close">&times;</a>
             <h3>Product distribution drive</h3>
@@ -252,7 +253,7 @@
         </div>
         
         <!--popup2-->
-        <div id="popup2" class="popup-container popup-style-2">
+        <div id="popup2" class="popup-container popup-style-2" data-aos="fade-down">
           <div class="popup-content">
             <a href="#null" class="close">&times;</a>
             <h3>Breaking Barriers: Empowering Women Through Education and Unhiding Taboos</h3>
@@ -294,7 +295,7 @@
         </div>
         
         <!--popup3-->
-        <div id="popup3" class="popup-container popup-style-3">
+        <div id="popup3" class="popup-container popup-style-3" data-aos="fade-down">
           <div class="popup-content">
             <a href="#null" class="close">&times;</a>
             <h3>Self Defence Workshop</h3>
@@ -330,7 +331,7 @@
       
       <!-- ------------------------------------------- -->
 
-      <div class="founder-section">
+      <div class="founder-section"  data-aos="slide-up">
         <!-- <div class="founder-heading">
             <h1>Visionary behind <span>Padimpact</span></h1>
         </div> -->
@@ -460,5 +461,9 @@
 
       
       <script src="App.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
