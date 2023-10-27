@@ -388,7 +388,7 @@ ul li{
     line-height: 20px;
 }
 .popup-content div{
-    padding: 8px 0;
+    padding: 8px 8px;
 }
 .popup-content a.close{
     color: #aaaaaa;
