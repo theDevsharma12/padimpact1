@@ -16,11 +16,11 @@ slideControl.onmouseover = function() {
 }
 
 slideContainer.onmouseleave = function() {
-   timer = setInterval(showSlide, 2000);
+   timer = setInterval(showSlide, 6000);
 }
 
 slideControl.onmouseleave = function() {
-   timer = setInterval(showSlide, 2000);
+   timer = setInterval(showSlide, 6000);
 }
 
 function showSlide() {
