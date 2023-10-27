@@ -28,7 +28,9 @@ a{
 ul li{
     list-style: none;
 }
-
+.bg-color-1{
+	background-color: #ffe5ec;
+}
 .navbar {
 	background-color: transparent;
 	padding: 30px 10px;
