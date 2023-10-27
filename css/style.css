@@ -29,7 +29,8 @@ ul li{
     list-style: none;
 }
 .bg-color-1{
-	background-color: #ffe5ec;
+    background-color: #ffe5ec;
+	padding-bottom: 3rem;
 }
 .navbar {
 	background-color: transparent;
@@ -321,6 +322,7 @@ ul li{
 .sdg-section img{
     margin: 2rem 0;
     height: 11rem;
+    
 }
 
 
