@@ -52,14 +52,14 @@ ul li{
 	justify-content: space-between;
 	/* flex-direction: row-reverse; */
   }
+  .nav ul .active{
+	color: #E88683;
+  }
   .nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 20px;
-  }
-  .nav ul .active{
-	color: #E88683;
   }
   .nav .logo {
 	font-size: 22px;
@@ -1180,13 +1180,11 @@ footer p {
     font-weight: 500;
 	font-size: 14px;
 }
+
 }
 
 
 @media(max-width:700px){
-	.navbar-right{
-		display: none;
-	}
 	.caption h2 {
 		margin-bottom: 30px;
 		text-transform: uppercase;
