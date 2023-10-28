@@ -10,34 +10,23 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!--------Navbar------>
-    <div id="topnav" class="navbar">
-        <a href="#" class="logo">
-            <img src="./images/padimpact-logo.png" alt="">
-        </a>
-        <div class="navbar-right menu">
-          <a href="#" class="active">
-            Home
-          </a>
-          <a href="./about.html">
-            About Us
-          </a>
-          <a href="./padcinerator.html">
-            Padcinerator
-          </a>
-          <a href="category.html">
-            Blogs
-          </a>
-          <a href="./contact.html">
-            Contact us
-          </a>
-        </div>
-        <div class="navbar-right">
-          <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
+    <!--------Navbar------->
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo"><img src="./images/padimpact-logo.png" alt=""></a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./padcinerator">Padcinerator</a></li>
+        <li><a href="./category.html">Blogs</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <span id="searchIcon"></span>
+      </ul>
+    </nav>
+
+    <!--------------------->
       
       <div id="slideshow-container" class="slideshow-container">
         <div class="slide-item bgimg fade" style="background-image: url('https://scalingupnutrition.org/wp-content/uploads/2021/06/Economic_-empowerment_of_rural_women_positively_impacts_social_norms_strengthens_food_security.jpg');">
