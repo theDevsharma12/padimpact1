@@ -82,16 +82,25 @@ window.onclick = function(event) {
 
 // -----------------------------
 
-// let theEnd=0;
-// navbar = document.querySelector('.navbar');
-// window.addEventListener('scroll',function(){
-//     var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
-//     if(scrollTop>theEnd){
-//         navbar.style.top='-70px'
-//         navbar.style.display='none';
-//     }
-//     else{
-//         navbar.style.top='0';
-//     }
-//     theEnd=scrollTop;
-// })
+const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+  if (nav.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
