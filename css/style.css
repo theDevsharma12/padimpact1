@@ -56,6 +56,9 @@ ul li{
 	color: #fff;
 	text-decoration: none;
   }
+  .active{
+	color: #E88683;
+  }
   .nav .logo {
 	font-size: 22px;
 	font-weight: 500;
