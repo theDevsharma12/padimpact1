@@ -52,11 +52,13 @@ ul li{
 	justify-content: space-between;
 	/* flex-direction: row-reverse; */
   }
-  a {
+  .nav ul li a {
 	color: #fff;
 	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
   }
-  .active{
+  .nav ul .active{
 	color: #E88683;
   }
   .nav .logo {
