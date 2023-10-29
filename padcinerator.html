@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padcinerator-Padimpact</title>
     <link rel="shortcut icon" href="images/padimpact-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/padcinerator.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/padcinerator.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <style>
         .features-section{
         	font-weight: 300;
@@ -39,36 +41,28 @@
 </head>
 <body>
     <section>
-        <!--------Navbar------>
-        <div id="topnav" class="navbar">
-          <a href="./index.html" class="logo">
-              <img src="./images/padimpact-logo.png" alt="">
-          </a>
-          <div class="navbar-right menu">
-            <a href="./index.html" >
-              Home
-            </a>
-            <a href="./about.html">
-              About Us
-            </a>
-            <a href="./padcinerator.html" class="active">
-              Padcinerator
-            </a>
-            <a href="./category.html">
-              Blogs
-            </a>
-            <a href="./contact.html">
-              Contact us
-            </a>
-          </div>
-          <div class="navbar-right">
-            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-      </div>
+    <!--------Navbar------->
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo"><img src="./images/padimpact-logo.png" alt=""></a>
 
-    <!-------------------->
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a class="active" href="./padcinerator">Padcinerator</a></li>
+        <li><a href="./category.html">Blogs</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <span id="searchIcon"></span>
+      </ul>
+
+      <!-- <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div> -->
+    </nav>
+
+    <!--------------------->
     
     </section>
 
@@ -85,7 +79,7 @@
                     <span>Padcinerator</span> lineup comprises a diverse range of innovative solutions. Firstly, the portable wall mount exhibits a compact design, allowing for seamless wall installation and effectively saving space. Secondly, the catalytic converter ensures optimal emissions control, enabling eco-friendly operations. The car grass mount is specifically engineered for secure placement on various surfaces, including grass, enhancing its versatility. The ash tank alarm incorporates a cutting-edge sensor-based alert mechanism, preventing overflow by promptly notifying users when the ash tank approaches maximum capacity. Finally, the 100+ pad ash storage product provides ample storage space for over 100 pads, significantly reducing the frequency of disposal and maintenance requirements.
                    </p>
                    <div class="features-head">
-                    <h2>Our Features</h2>
+                    <!-- <h2>Our Features</h2> -->
                    </div>
                    <div class="features-section">
                     <div>
@@ -120,7 +114,77 @@
         <div class="padcinator-models">
             <H1>Padcinerator <span>Models</span></H1>
         </div>
-        <div class="features section">
+        <div class="about-container-1">
+           <div class="about-box">
+              <div class="about-content">
+                  <h2>Pad<span>cinerator</span></h2>
+                  <p>
+                    <ul class="features-content">
+                      <li> 
+                        <span>Portable Wall Mount:</span> Compact design with wall-mounting capability for easy installation and space-saving.
+                      </li>
+                      <li>
+                       <span> Catalytic Converter:</span> Efficient emissions control technology ensures environmentally-friendly operation.
+                      </li>
+                      <li>
+                        <span>Car Grass Mounted:</span> Safe installation on diverse surfaces, including grass, for versatile placement.
+                      </li>
+                      <li>
+                        <span>Ash Tank Alarm:</span> Sensor-driven alarm system prevents ash tank overflow. 100+ pad storage minimizes maintenance needs.
+                      </li>
+                    </ul>
+                  </p>
+              </div>
+              <img src="./images/Incinator-img.png" alt="">
+          </div>
+           <div class="about-box mission clumn-reverse">
+              <img src="./images/padincinator-img-4.png" alt="">
+              <div class="about-content">
+                  <h2><span>Subscription</span> Model</h2>
+                  <p>
+                    <ul class="features-content">
+                      <li> 
+                        <span>Portable Wall Mount:</span> Compact design with wall-mounting capability for easy installation and space-saving.
+                      </li>
+                      <li>
+                       <span> Catalytic Converter:</span> Efficient emissions control technology ensures environmentally-friendly operation.
+                      </li>
+                      <li>
+                        <span>Car Grass Mounted:</span> Safe installation on diverse surfaces, including grass, for versatile placement.
+                      </li>
+                      <li>
+                        <span>Ash Tank Alarm:</span> Sensor-driven alarm system prevents ash tank overflow. 100+ pad storage minimizes maintenance needs.
+                      </li>
+                    </ul>
+                  </p>
+              </div>
+          </div>
+
+           <div class="about-box">
+            <div class="about-content">
+                <h2>Impact <span>Master</span></h2>
+                <p>
+                  <ul class="features-content">
+                    <li> 
+                      <span>Portable Wall Mount:</span> Compact design with wall-mounting capability for easy installation and space-saving.
+                    </li>
+                    <li>
+                     <span> Catalytic Converter:</span> Efficient emissions control technology ensures environmentally-friendly operation.
+                    </li>
+                    <li>
+                      <span>Car Grass Mounted:</span> Safe installation on diverse surfaces, including grass, for versatile placement.
+                    </li>
+                    <li>
+                      <span>Ash Tank Alarm:</span> Sensor-driven alarm system prevents ash tank overflow. 100+ pad storage minimizes maintenance needs.
+                    </li>
+                  </ul>
+                </p>
+            </div>
+            <img src="./images/padincinator-img-3.png" alt="">
+        </div>
+      </div>
+
+        <!-- <div class="features section">
             <div class="container">
                 <div class="features-inner section-inner has-bottom-divider">
                     <div class="features-wrap">
@@ -206,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="incinator-making">
@@ -257,6 +321,30 @@
         </div>
       </div>
    </footer>
+   <script>
+    const nav = document.querySelector(".nav"),
+    searchIcon = document.querySelector("#searchIcon"),
+    navOpenBtn = document.querySelector(".navOpenBtn"),
+    navCloseBtn = document.querySelector(".navCloseBtn");
+
+  searchIcon.addEventListener("click", () => {
+    nav.classList.toggle("openSearch");
+    nav.classList.remove("openNav");
+    if (nav.classList.contains("openSearch")) {
+      return searchIcon.classList.replace("uil-search", "uil-times");
+    }
+    searchIcon.classList.replace("uil-times", "uil-search");
+  });
+
+  navOpenBtn.addEventListener("click", () => {
+    nav.classList.add("openNav");
+    nav.classList.remove("openSearch");
+    searchIcon.classList.replace("uil-times", "uil-search");
+  });
+  navCloseBtn.addEventListener("click", () => {
+    nav.classList.remove("openNav");
+  });
+  </script>
 
 </body>
 </html>
