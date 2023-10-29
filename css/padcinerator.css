@@ -16,9 +16,39 @@ section{
 }
 
 
+
+.main{
+    margin: 8rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+	margin-top: 1rem;
+	background-color: transparent;
+	border-radius: 18px;
+	padding-bottom: 20px;
+	margin-bottom: 6rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.features-section {
+    font-weight: 300;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+.features-section {
+    margin: 0rem!important;
+}
 .incinator{
 margin-bottom: 14rem;
+height: 50vh;
 }
+.incinator-img {
+    width: 55%;
+}
+
 /* 
 .main{
     background-color: #000;
@@ -88,11 +118,84 @@ margin-bottom: 14rem;
     margin: 0 9rem;
 }
 
-@media (max-width: 426px){
-    .main .incinator {
-        /* display: inline-block; */
-    }
 
+
+.main{
+    /* margin-top: 10rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+.main h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.about-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6rem;
+}
+.about-box img{
+    height: 14rem;
+}
+.about-content{
+    margin: 0 4rem;
+}
+.about-content h2{
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+.about-content-main{
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+@media(max-width:1025px){
+    .incinator-container p {
+        margin-top: 2rem;
+        font-size: 16px;
+    }
+    .incinator-container{
+        width: 100%;
+    }
+    .features-section {
+        font-weight: 300;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .incinator-img {
+        width: 50%;
+    }
+    .about-box {
+        margin-top: 2rem;
+    }
+    .main h1{
+        font-size: 2.2rem;
+        margin-bottom: 0rem;
+        margin-top: 2rem;
+    }
+    .features-section div h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .about-container-1 {
+    margin: 0rem;
+    line-height: 24px;
+    }
+    .about-box img {
+        height: 18rem;
+    }
+}
+
+@media (max-width: 726px){
     .features-section {
         font-weight: 300;
         margin-top: 2.4rem;
@@ -104,4 +207,46 @@ margin-bottom: 14rem;
     .fetaures-content {
         font-size: .9rem;
     }
+    .incinator{
+        margin-bottom: 1rem;
+        margin-top: -10rem;
+        height: auto;
+    }
+    .incinator-img{
+        height: 24rem;
+        width: 25rem;
+    }
+    .padcinator-models h1 {
+        font-size: 36px;
+    }
+    .about-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .clumn-reverse{
+        flex-direction: column-reverse;
+    }
+    .about-container-1 {
+        margin: 0rem;
+        line-height: 24px;
+    }
+    .main h1{
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        margin-top: 2rem;
+    }
+    .about-box {
+        margin-top: 2rem;
+    }
+    .main {
+        margin: -1rem;
+    }
+    .incinator-making{
+        margin: 3rem 0;
+    }
+    section{
+        background-size: 100% 60%;
+        margin-bottom: -8rem;
+    }
 }
+
