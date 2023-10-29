@@ -13,45 +13,45 @@
 <!-- Main CSS -->
 <link href="./css/main.css" rel="stylesheet"/>
 <link rel="stylesheet" href="./css/style.css">
-<style>
-	.navbar{
-		color: black;
-		margin-left: 6rem;
-	}
-	.navbar a{
-		margin-bottom: 6rem;
-		color: #000;
-	}
-</style>
+    <style>
+    @media screen and (max-width: 768px){
+     .nav .navOpenBtn {
+        color: #000;
+        font-size: 20px;
+        cursor: pointer;
+      }   
+      .nav .nav-links li .black{
+          color: #fff;
+      }
+    }
+    </style>
 <!-- <link rel="stylesheet" href="./css/style.css"> -->
 </head>
 <body>
 
 
-<!--------Navbar------>
-<div id="topnav" class="navbar">
-	<a href="#" class="logo">
-		<img src="./images/padimpact-logo.png" alt="">
-	</a>
-	<div class="navbar-right menu">
-	  <a href="#" class="active">
-		Home
-	  </a>
-	  <a href="./About.html">
-		About Us
-	  </a>
-	  <a href="./Padcinerator.html">
-		Padcinerator
-	  </a>
-	  <a href="./category.html">
-		Blogs
-	  </a>
-	  <a href="./contact.html">
-		Contact us
-	  </a>
-	</div>
-  </div>
+<!--------Navbar------->
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo"><img src="./images/padimpact-logo.png" alt=""></a>
 
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a class="black" href="./index.html">Home</a></li>
+        <li><a class="active" href="./about.html">About us</a></li>
+        <li><a class="black" href="./padcinerator.html">Padcinerator</a></li>
+        <li><a class="black" href="./category.html">Blogs</a></li>
+        <li><a  class="black" href="./contact.html">Contact Us</a></li>
+        <span id="searchIcon"></span>
+      </ul>
+
+      <!-- <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div> -->
+    </nav>
+
+    <!--------------------->
 
 <div class="container mt-5 mb-5">
 	<div class="row">
