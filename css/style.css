@@ -56,6 +56,9 @@ ul li{
   .nav ul .active{
 	color: #E88683;
   }
+.nav ul .active-1 {
+    color: #E88683;
+}
   .nav ul li a {
 	color: #fff;
 	text-decoration: none;
