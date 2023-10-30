@@ -13,6 +13,36 @@ body{
     color: #000!important;
 }
 
+#d2{
+    margin: 1rem 0;
+    color: #343f4f;
+    line-height: 21px;
+}
+
+.videoContainer img {
+    height: 28rem;
+    margin-left: 1.3rem;
+}
+.text-blk.description {
+    display: none;
+}
+
+@media(max-width:500px){
+    #d2{
+        margin: 1rem -1.2rem;
+        line-height: 19px;
+    }
+    .main{
+        margin: 2rem!important;
+        margin-top: 7rem!important;
+    }
+    .allText.bottomText {
+        margin-top: 0px !important;
+        margin-bottom: 60px;
+    }
+}
+
+/*------------------------------------------*/
 
 .awards-section{
     margin-top: 2rem;
